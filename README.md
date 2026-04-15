@@ -2,7 +2,7 @@
 
 ## Aim
 
-To design and develop a simple web application that allows users to dynamically change the **text color** and **background color** using interactive color picker tools.
+To design and develop a simple web application that allows users to dynamically change the text color and background color using interactive color picker tools.
 
 ## Procedure
 
@@ -13,15 +13,14 @@ To design and develop a simple web application that allows users to dynamically 
 5. Apply CSS styles to enhance the appearance of the webpage.
 6. Use JavaScript to:
 
-   * Capture selected color values
-   * Apply selected color to text
-   * Apply selected color to background
-   * Reset colors to default values
+   - Capture selected color values
+   - Apply selected color to text
+   - Apply selected color to background
+   - Reset colors to default values
 7. Test the application in a browser.
 8. Push the project to GitHub.
 
 ## Code
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -87,7 +86,7 @@ To design and develop a simple web application that allows users to dynamically 
 
   <button onclick="resetColors()">Reset</button>
 
-  <p id="unity">Unity is Strength</p>
+  <p id="unity">Prasanna Tejaswi</p>
 
   <script>
     function changeTextColor() {
@@ -111,20 +110,19 @@ To design and develop a simple web application that allows users to dynamically 
 
 ## Output
 
-* A webpage is displayed with:
+A webpage is displayed with:
 
-  * Color picker for text color
-  * Color picker for background color
-  * A sample text: **"Unity is Strength"**
-* When user selects a color:
-
-  * Text color changes instantly
-  * Background color updates dynamically
-* Reset button restores default colors
+  - Color picker for text color
+  -Color picker for background color
+  - A sample text: **"Prasanna Tejaswi"
+ When user selects a color:
+  -Text color changes instantly
+  - Background color updates dynamically
+  -Reset button restores default colors
 
 ## Result
 
 The color palette web application was successfully created.
-Users can interactively change text and background colors using color pickers, demonstrating basic **HTML, CSS, and JavaScript DOM manipulation.
+Users can interactively change text and background colors using color pickers, demonstrating basic HTML, CSS, and JavaScript DOM manipulation.
 
 
