@@ -1,25 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Color Palette</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Color Palette Project</title>
+
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      text-align: center;
+      background-color: #f0f0f0;
+      transition: background-color 0.3s ease;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-top: 20px;
+    }
+
+    .container {
+      margin-top: 20px;
+    }
+
+    .box {
+      margin: 15px;
+    }
+
+    label {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    input[type="color"] {
+      width: 60px;
+      height: 40px;
+      border: none;
+      cursor: pointer;
+    }
+
+    p {
+      font-size: 28px;
+      margin-top: 30px;
+      color: #222;
+      transition: color 0.3s ease;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin-top: 20px;
+      cursor: pointer;
+      border: none;
+      background-color: #444;
+      color: white;
+      border-radius: 6px;
+    }
+
+    button:hover {
+      background-color: #666;
+    }
+  </style>
 </head>
+
 <body>
 
-    <h1 class="title">My Color Palette</h1>
+  <h2>Color Palette Project</h2>
 
-    <div class="palette">
-        <div class="color-box c1">#FF6B6B</div>
-        <div class="color-box c2">#4ECDC4</div>
-        <div class="color-box c3">#1A535C</div>
-        <div class="color-box c4">#FFE66D</div>
-        <div class="color-box c5">#F7FFF7</div>
+  <div class="container">
+
+    <!-- Text Color Picker -->
+    <div class="box">
+      <label>Text Color:</label>
+      <input type="color" id="textColorPicker" onchange="changeTextColor()">
     </div>
 
-    <p class="text-box">
-        This is a sample text with a background color.
-    </p>
+    <!-- Background Color Picker -->
+    <div class="box">
+      <label>Background Color:</label>
+      <input type="color" id="bgColorPicker" onchange="changeBackgroundColor()">
+    </div>
+
+    <!-- Reset Button -->
+    <button onclick="resetColors()">Reset</button>
+
+  </div>
+
+  <!-- Text -->
+  <p id="unity">Prasanna Tejaswi</p>
+
+  <script>
+    function changeTextColor() {
+      let color = document.getElementById("textColorPicker").value;
+      document.getElementById("unity").style.color = color;
+    }
+
+    function changeBackgroundColor() {
+      let color = document.getElementById("bgColorPicker").value;
+      document.body.style.backgroundColor = color;
+    }
+
+    function resetColors() {
+      document.getElementById("unity").style.color = "#222";
+      document.body.style.backgroundColor = "#f0f0f0";
+
+      document.getElementById("textColorPicker").value = "#000000";
+      document.getElementById("bgColorPicker").value = "#f0f0f0";
+    }
+  </script>
 
 </body>
 </html>
