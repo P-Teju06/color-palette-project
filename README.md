@@ -114,7 +114,7 @@ A webpage is displayed with:
 
   - Color picker for text color
   -Color picker for background color
-  - A sample text: **"Prasanna Tejaswi"
+  - A sample text: "Prasanna Tejaswi"
  When user selects a color:
   -Text color changes instantly
   - Background color updates dynamically
